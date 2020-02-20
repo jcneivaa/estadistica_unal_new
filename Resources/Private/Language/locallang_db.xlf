@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="es" datatype="plaintext" original="messages" date="2020-02-20T20:45:15Z" product-name="estadistica_unal_new">
+		<header/>
+		<body>
+			<trans-unit id="tx_estadisticaunalnew_domain_model_categoria">
+				<source>Categoria</source>
+			</trans-unit>
+			<trans-unit id="tx_estadisticaunalnew_domain_model_categoria.nombre">
+				<source>Nombre</source>
+			</trans-unit>
+			<trans-unit id="tx_estadisticaunalnew_domain_model_categoria.nombre_display">
+				<source>Nombre Display</source>
+			</trans-unit>
+			<trans-unit id="tx_estadisticaunalnew_domain_model_categoria.badge">
+				<source>Badge</source>
+			</trans-unit>
+			<trans-unit id="tx_estadisticaunalnew_domain_model_categoria.alt_badge">
+				<source>Alt Badge</source>
+			</trans-unit>
+			<trans-unit id="tx_estadisticaunalnew_domain_model_categoria.descripcion">
+				<source>Descripcion</source>
+			</trans-unit>
+			<trans-unit id="tx_estadisticaunalnew_domain_model_categoria.link">
+				<source>Link</source>
+			</trans-unit>
+			<trans-unit id="tx_estadisticaunalnew_domain_model_categoria.atributos">
+				<source>Atributos</source>
+			</trans-unit>
+			<trans-unit id="tx_estadisticaunalnew_domain_model_atributo">
+				<source>Atributo</source>
+			</trans-unit>
+			<trans-unit id="tx_estadisticaunalnew_domain_model_atributo.nombre">
+				<source>Nombre</source>
+			</trans-unit>
+			<trans-unit id="tx_estadisticaunalnew_domain_model_atributo.descripcion">
+				<source>Descripcion</source>
+			</trans-unit>
+			<trans-unit id="tx_estadisticaunalnew_domain_model_atributo.tipo">
+				<source>Tipo</source>
+			</trans-unit>
+			<trans-unit id="tx_estadisticaunalnew_domain_model_tipoatributo">
+				<source>Tipo Atributo</source>
+			</trans-unit>
+			<trans-unit id="tx_estadisticaunalnew_domain_model_tipoatributo.nombre">
+				<source>Nombre</source>
+			</trans-unit>
+			<trans-unit id="tx_estadisticaunalnew_domain_model_tipoatributo.nombre_display">
+				<source>Nombre Display</source>
+			</trans-unit>
+			<trans-unit id="tx_estadistica_unal_new_estadisticaspreview.name">
+				<source>Cifras Preview</source>
+			</trans-unit>
+			<trans-unit id="tx_estadistica_unal_new_estadisticaspreview.description">
+				<source>Plugin para mostrar los indicadores estadisticos de la universidad</source>
+			</trans-unit>
+			<trans-unit id="tx_estadistica_unal_new_listcategorias.name">
+				<source>Categorías</source>
+			</trans-unit>
+			<trans-unit id="tx_estadistica_unal_new_listcategorias.description">
+				<source>Plugin para mostrar las categorias de cifras estadisticas de la universidad.</source>
+			</trans-unit>
+			<trans-unit id="tx_estadistica_unal_new_showprotocolo.name">
+				<source>Protocolo</source>
+			</trans-unit>
+			<trans-unit id="tx_estadistica_unal_new_showprotocolo.description">
+				<source>Plugin para mostrar el protocolo estadistico de cada una de las categorias.</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

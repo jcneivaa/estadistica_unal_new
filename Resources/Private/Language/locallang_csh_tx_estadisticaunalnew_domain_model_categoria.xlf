@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="es" datatype="plaintext" original="messages" date="2020-02-20T20:45:15Z" product-name="estadistica_unal_new">
+		<header/>
+		<body>
+			<trans-unit id="nombre.description">
+				<source>nombre</source>
+			</trans-unit>
+			<trans-unit id="nombre_display.description">
+				<source>nombreDisplay</source>
+			</trans-unit>
+			<trans-unit id="badge.description">
+				<source>badge</source>
+			</trans-unit>
+			<trans-unit id="alt_badge.description">
+				<source>altBadge</source>
+			</trans-unit>
+			<trans-unit id="descripcion.description">
+				<source>descripcion</source>
+			</trans-unit>
+			<trans-unit id="link.description">
+				<source>link</source>
+			</trans-unit>
+			<trans-unit id="atributos.description">
+				<source>atributos</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

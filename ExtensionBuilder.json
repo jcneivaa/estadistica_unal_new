@@ -1,0 +1,359 @@
+{
+    "modules": [
+        {
+            "config": {
+                "position": [
+                    122,
+                    20
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_list": true,
+                    "_default1_show": false,
+                    "_default2_new_create": false,
+                    "_default3_edit_update": false,
+                    "_default4_delete": false,
+                    "customActions": []
+                },
+                "name": "Categoria",
+                "objectsettings": {
+                    "addDeletedField": false,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": true,
+                    "aggregateRoot": true,
+                    "categorizable": true,
+                    "description": "",
+                    "mapToTable": "",
+                    "parentClass": "",
+                    "skipTypeConfiguration": false,
+                    "sorting": false,
+                    "type": "Entity",
+                    "uid": "777739061132"
+                },
+                "propertyGroup": {
+                    "properties": [
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": false,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsRequired": true,
+                            "propertyName": "nombre",
+                            "propertyType": "String",
+                            "uid": "1149052042827"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": false,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsRequired": true,
+                            "propertyName": "nombreDisplay",
+                            "propertyType": "String",
+                            "uid": "109325193564"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": false,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsRequired": true,
+                            "propertyName": "badge",
+                            "propertyType": "Image",
+                            "uid": "485401277244"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": false,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsRequired": true,
+                            "propertyName": "altBadge",
+                            "propertyType": "Image",
+                            "uid": "1395481729479"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": false,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "descripcion",
+                            "propertyType": "RichText",
+                            "uid": "1324725162260"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "link",
+                            "propertyType": "String",
+                            "uid": "525312778143"
+                        }
+                    ]
+                },
+                "relationGroup": {
+                    "relations": [
+                        {
+                            "foreignRelationClass": "",
+                            "lazyLoading": true,
+                            "propertyIsExcludeField": false,
+                            "relationDescription": "",
+                            "relationName": "atributos",
+                            "relationType": "manyToMany",
+                            "relationWire": "[wired]",
+                            "renderType": "selectMultipleSideBySide",
+                            "uid": "906629118848"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "config": {
+                "position": [
+                    448,
+                    8
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_list": true,
+                    "_default1_show": false,
+                    "_default2_new_create": false,
+                    "_default3_edit_update": false,
+                    "_default4_delete": false,
+                    "customActions": []
+                },
+                "name": "Atributo",
+                "objectsettings": {
+                    "addDeletedField": false,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": true,
+                    "aggregateRoot": false,
+                    "categorizable": false,
+                    "description": "",
+                    "mapToTable": "",
+                    "parentClass": "",
+                    "skipTypeConfiguration": false,
+                    "sorting": false,
+                    "type": "Entity",
+                    "uid": "329806883581"
+                },
+                "propertyGroup": {
+                    "properties": [
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": false,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsRequired": true,
+                            "propertyName": "nombre",
+                            "propertyType": "String",
+                            "uid": "1418930305206"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "descripcion",
+                            "propertyType": "RichText",
+                            "uid": "318555783994"
+                        }
+                    ]
+                },
+                "relationGroup": {
+                    "relations": [
+                        {
+                            "foreignRelationClass": "",
+                            "lazyLoading": false,
+                            "propertyIsExcludeField": false,
+                            "relationDescription": "",
+                            "relationName": "tipo",
+                            "relationType": "zeroToOne",
+                            "relationWire": "[wired]",
+                            "renderType": "selectSingleBox",
+                            "uid": "846292068123"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "config": {
+                "position": [
+                    261,
+                    181
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_list": false,
+                    "_default1_show": false,
+                    "_default2_new_create": false,
+                    "_default3_edit_update": false,
+                    "_default4_delete": false,
+                    "customActions": []
+                },
+                "name": "TipoAtributo",
+                "objectsettings": {
+                    "addDeletedField": false,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": false,
+                    "aggregateRoot": false,
+                    "categorizable": false,
+                    "description": "",
+                    "mapToTable": "",
+                    "parentClass": "",
+                    "skipTypeConfiguration": false,
+                    "sorting": false,
+                    "type": "Entity",
+                    "uid": "536575890999"
+                },
+                "propertyGroup": {
+                    "properties": [
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": false,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsRequired": true,
+                            "propertyName": "nombre",
+                            "propertyType": "String",
+                            "uid": "1237913542244"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": false,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsRequired": true,
+                            "propertyName": "nombreDisplay",
+                            "propertyType": "String",
+                            "uid": "999261848022"
+                        }
+                    ]
+                },
+                "relationGroup": {
+                    "relations": []
+                }
+            }
+        }
+    ],
+    "properties": {
+        "backendModules": [],
+        "description": "Nueva version de la extensi\u00f3n estadisticas unal",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "typo3 => 8.7.0-8.7.99\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "skipGenerateDocumentationTemplate": false,
+            "sourceLanguage": "es",
+            "state": "alpha",
+            "targetVersion": "8.7.0-8.7.99",
+            "version": "1.0.0"
+        },
+        "extensionKey": "estadistica_unal_new",
+        "name": "Estadistica Unal 2.0",
+        "originalExtensionKey": "",
+        "originalVendorName": "",
+        "persons": [
+            {
+                "company": "Unal",
+                "email": "eaortiz@unal.edu.co",
+                "name": "Alexis Ortiz",
+                "role": "Developer"
+            },
+            {
+                "company": "Unal",
+                "email": "jcneivaa@unal.edu.co ",
+                "name": "Alexis Ortiz ft. Camilo Neiva",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [
+            {
+                "actions": {
+                    "controllerActionCombinations": "",
+                    "noncacheableActions": "",
+                    "switchableActions": ""
+                },
+                "description": "Plugin para mostrar los indicadores estadisticos de la universidad",
+                "key": "estadisticaspreview",
+                "name": "Cifras Preview"
+            },
+            {
+                "actions": {
+                    "controllerActionCombinations": "",
+                    "noncacheableActions": "",
+                    "switchableActions": ""
+                },
+                "description": "Plugin para mostrar las categorias de cifras estadisticas de la universidad.",
+                "key": "listcategorias",
+                "name": "Categor\u00edas"
+            },
+            {
+                "actions": {
+                    "controllerActionCombinations": "",
+                    "noncacheableActions": "",
+                    "switchableActions": ""
+                },
+                "description": "Plugin para mostrar el protocolo estadistico de cada una de las categorias.",
+                "key": "showprotocolo",
+                "name": "Protocolo"
+            }
+        ],
+        "vendorName": "UNAL"
+    },
+    "wires": [
+        {
+            "src": {
+                "moduleId": 1,
+                "terminal": "relationWire_0",
+                "uid": "846292068123"
+            },
+            "tgt": {
+                "moduleId": 2,
+                "terminal": "SOURCES",
+                "uid": "536575890999"
+            }
+        },
+        {
+            "src": {
+                "moduleId": 0,
+                "terminal": "relationWire_0",
+                "uid": "906629118848"
+            },
+            "tgt": {
+                "moduleId": 1,
+                "terminal": "SOURCES",
+                "uid": "329806883581"
+            }
+        }
+    ],
+    "log": {
+        "last_modified": "2020-02-20 08:45",
+        "extension_builder_version": "8.10.4",
+        "be_user": " (4)"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "name": "unal/estadistica-unal-new",
+    "type": "typo3-cms-extension",
+    "description": "Nueva version de la extensi\u00f3n estadisticas unal",
+    "authors": [
+        {
+            "name": "Alexis Ortiz",
+            "role": "Developer"
+        },
+        {
+            "name": "Alexis Ortiz ft. Camilo Neiva",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^8.7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "UNAL\\EstadisticaUnalNew\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "UNAL\\EstadisticaUnalNew\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "estadistica_unal_new": "self.version",
+        "typo3-ter/estadistica-unal-new": "self.version"
+    }
+}
