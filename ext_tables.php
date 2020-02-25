@@ -7,20 +7,14 @@ call_user_func(
 
         \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
             'UNAL.EstadisticaUnalNew',
-            'Estadisticaspreview',
-            'Cifras Preview'
-        );
-
-        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
-            'UNAL.EstadisticaUnalNew',
             'Listcategorias',
-            'Categorías'
+            'Categorías 2.0'
         );
 
         \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
             'UNAL.EstadisticaUnalNew',
             'Showprotocolo',
-            'Protocolo'
+            'Protocolo 2.0'
         );
 
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('estadistica_unal_new', 'Configuration/TypoScript', 'Estadistica Unal 2.0');

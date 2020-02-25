@@ -20,7 +20,7 @@ class Atributo extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 {
     /**
      * nombre
-     * 
+     *
      * @var string
      * @validate NotEmpty
      */
@@ -28,21 +28,21 @@ class Atributo extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * descripcion
-     * 
+     *
      * @var string
      */
     protected $descripcion = '';
 
     /**
      * tipo
-     * 
+     *
      * @var \UNAL\EstadisticaUnalNew\Domain\Model\TipoAtributo
      */
     protected $tipo = null;
 
     /**
      * Returns the nombre
-     * 
+     *
      * @return string $nombre
      */
     public function getNombre()
@@ -52,7 +52,7 @@ class Atributo extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the nombre
-     * 
+     *
      * @param string $nombre
      * @return void
      */
@@ -63,7 +63,7 @@ class Atributo extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the descripcion
-     * 
+     *
      * @return string $descripcion
      */
     public function getDescripcion()
@@ -73,7 +73,7 @@ class Atributo extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the descripcion
-     * 
+     *
      * @param string $descripcion
      * @return void
      */
@@ -84,7 +84,7 @@ class Atributo extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the tipo
-     * 
+     *
      * @return \UNAL\EstadisticaUnalNew\Domain\Model\TipoAtributo $tipo
      */
     public function getTipo()
@@ -94,7 +94,7 @@ class Atributo extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the tipo
-     * 
+     *
      * @param \UNAL\EstadisticaUnalNew\Domain\Model\TipoAtributo $tipo
      * @return void
      */

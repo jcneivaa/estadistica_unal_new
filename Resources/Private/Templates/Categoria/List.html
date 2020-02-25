@@ -1,48 +1,47 @@
-<html xmlns:f="https://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
-	<f:layout name="Default" />
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
 
-	This Template is responsible for creating a table of domain objects.
+<f:section name="main">
 
-	If you modify this template, do not forget to change the overwrite settings
-	in /Configuration/ExtensionBuilder/settings.yaml:
-	  Resources:
-		Private:
-		  Templates:
-			List.html: keep
+<f:flashMessages />
 
-	Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+	<div class="container-fluid">
+		<div class="row row-eq-height flexthis">
+			<f:for each="{categorias}" as="categoria" iteration="iterator">
+				<div class="col-md-3 col-sm-6 col-xs-12 badgeCategoria" >
 
-	<f:section name="content">
-		<h1>Listing for Categoria</h1>
+					<f:if condition="{categoria.link}">
+						<f:then>
+							<f:link.typolink parameter="{categoria.link}" target="_blank" class="colour-shifter"  additionalParams="&u=b" additionalAttributes="{type:'button'}">
+								<img src="{categoria.badge.originalResource.publicUrl}"
+									 data-altbadge="{categoria.altBadge.originalResource.publicUrl}"
+									 data-badge="{categoria.badge.originalResource.publicUrl}"
+									 class="unBadge img-responsive" width=100%>
+								<div class="row">
+									<h4>{categoria.nombreDisplay}</h4>
+								</div>
+							</f:link.typolink>
+						</f:then>
+						<f:else>
+							<f:link.action class="colour-shifter" action="show" arguments="{categoria : categoria}" >
+								<img src="{categoria.badge.originalResource.publicUrl}"
+									 data-altbadge="{categoria.altBadge.originalResource.publicUrl}"
+									 data-badge="{categoria.badge.originalResource.publicUrl}"
+									 class="unBadge img-responsive" width=100%>
+								<div class="row">
+									<h4>{categoria.nombreDisplay}</h4>
+								</div>
+							</f:link.action>									
+						</f:else>
+					</f:if>
+				</div>	
 
-		<f:flashMessages />
-
-		<table  class="tx_estadisticaunalnew" >
-			<tr>
-				<th><f:translate key="tx_estadisticaunalnew_domain_model_categoria.nombre" /></th>
-				<th><f:translate key="tx_estadisticaunalnew_domain_model_categoria.nombre_display" /></th>
-				<th><f:translate key="tx_estadisticaunalnew_domain_model_categoria.badge" /></th>
-				<th><f:translate key="tx_estadisticaunalnew_domain_model_categoria.alt_badge" /></th>
-				<th><f:translate key="tx_estadisticaunalnew_domain_model_categoria.descripcion" /></th>
-				<th><f:translate key="tx_estadisticaunalnew_domain_model_categoria.link" /></th>
-				<th> </th>
-				<th> </th>
-			</tr>
-
-			<f:for each="{categorias}" as="categoria">
-				<tr>
-					<td><f:link.action action="show" arguments="{categoria : categoria}"> {categoria.nombre}</f:link.action></td>
-					<td><f:link.action action="show" arguments="{categoria : categoria}"> {categoria.nombreDisplay}</f:link.action></td>
-					<td><f:link.action action="show" arguments="{categoria : categoria}"> {categoria.badge.originalResource.name}</f:link.action></td>
-					<td><f:link.action action="show" arguments="{categoria : categoria}"> {categoria.altBadge.originalResource.name}</f:link.action></td>
-					<td><f:link.action action="show" arguments="{categoria : categoria}"> {categoria.descripcion}</f:link.action></td>
-					<td><f:link.action action="show" arguments="{categoria : categoria}"> {categoria.link}</f:link.action></td>
-					<td><f:link.action action="edit" arguments="{categoria : categoria}">Edit</f:link.action></td>
-					<td><f:link.action action="delete" arguments="{categoria : categoria}">Delete</f:link.action></td>
-				</tr>
+				{f:if(condition: "{iterator.cycle} % 4==0", then: '<div class="clearfix visible-lg visible-md"></div>')}
+				{f:if(condition: "{iterator.cycle} % 2==0", then: '<div class="clearfix visible-sm"></div>')}
+				
 			</f:for>
-		</table>
+		</div>
+	</div>
 
-		<f:link.action action="new">New Categoria</f:link.action>
-	</f:section>
+</f:section>
 </html>

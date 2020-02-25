@@ -20,7 +20,7 @@ class Categoria extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 {
     /**
      * nombre
-     * 
+     *
      * @var string
      * @validate NotEmpty
      */
@@ -28,7 +28,7 @@ class Categoria extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * nombreDisplay
-     * 
+     *
      * @var string
      * @validate NotEmpty
      */
@@ -36,7 +36,7 @@ class Categoria extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * badge
-     * 
+     *
      * @var \TYPO3\CMS\Extbase\Domain\Model\FileReference
      * @validate NotEmpty
      * @cascade remove
@@ -45,7 +45,7 @@ class Categoria extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * altBadge
-     * 
+     *
      * @var \TYPO3\CMS\Extbase\Domain\Model\FileReference
      * @validate NotEmpty
      * @cascade remove
@@ -54,21 +54,21 @@ class Categoria extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * descripcion
-     * 
+     *
      * @var string
      */
     protected $descripcion = '';
 
     /**
      * link
-     * 
+     *
      * @var string
      */
     protected $link = '';
 
     /**
      * atributos
-     * 
+     *
      * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\UNAL\EstadisticaUnalNew\Domain\Model\Atributo>
      * @lazy
      */
@@ -88,7 +88,7 @@ class Categoria extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * Do not modify this method!
      * It will be rewritten on each save in the extension builder
      * You may modify the constructor of this class instead
-     * 
+     *
      * @return void
      */
     protected function initStorageObjects()
@@ -98,7 +98,7 @@ class Categoria extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the nombre
-     * 
+     *
      * @return string $nombre
      */
     public function getNombre()
@@ -108,7 +108,7 @@ class Categoria extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the nombre
-     * 
+     *
      * @param string $nombre
      * @return void
      */
@@ -119,7 +119,7 @@ class Categoria extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the nombreDisplay
-     * 
+     *
      * @return string $nombreDisplay
      */
     public function getNombreDisplay()
@@ -129,7 +129,7 @@ class Categoria extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the nombreDisplay
-     * 
+     *
      * @param string $nombreDisplay
      * @return void
      */
@@ -140,7 +140,7 @@ class Categoria extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the badge
-     * 
+     *
      * @return \TYPO3\CMS\Extbase\Domain\Model\FileReference $badge
      */
     public function getBadge()
@@ -150,7 +150,7 @@ class Categoria extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the badge
-     * 
+     *
      * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $badge
      * @return void
      */
@@ -161,7 +161,7 @@ class Categoria extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the altBadge
-     * 
+     *
      * @return \TYPO3\CMS\Extbase\Domain\Model\FileReference $altBadge
      */
     public function getAltBadge()
@@ -171,7 +171,7 @@ class Categoria extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the altBadge
-     * 
+     *
      * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $altBadge
      * @return void
      */
@@ -182,7 +182,7 @@ class Categoria extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the descripcion
-     * 
+     *
      * @return string $descripcion
      */
     public function getDescripcion()
@@ -192,7 +192,7 @@ class Categoria extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the descripcion
-     * 
+     *
      * @param string $descripcion
      * @return void
      */
@@ -203,7 +203,7 @@ class Categoria extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the link
-     * 
+     *
      * @return string $link
      */
     public function getLink()
@@ -213,7 +213,7 @@ class Categoria extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the link
-     * 
+     *
      * @param string $link
      * @return void
      */
@@ -224,7 +224,7 @@ class Categoria extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Adds a Atributo
-     * 
+     *
      * @param \UNAL\EstadisticaUnalNew\Domain\Model\Atributo $atributo
      * @return void
      */
@@ -235,7 +235,7 @@ class Categoria extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Removes a Atributo
-     * 
+     *
      * @param \UNAL\EstadisticaUnalNew\Domain\Model\Atributo $atributoToRemove The Atributo to be removed
      * @return void
      */
@@ -246,7 +246,7 @@ class Categoria extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the atributos
-     * 
+     *
      * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\UNAL\EstadisticaUnalNew\Domain\Model\Atributo> $atributos
      */
     public function getAtributos()
@@ -256,7 +256,7 @@ class Categoria extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the atributos
-     * 
+     *
      * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\UNAL\EstadisticaUnalNew\Domain\Model\Atributo> $atributos
      * @return void
      */

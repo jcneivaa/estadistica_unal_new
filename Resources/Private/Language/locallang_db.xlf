@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="es" datatype="plaintext" original="messages" date="2020-02-20T20:45:15Z" product-name="estadistica_unal_new">
+	<file source-language="es" datatype="plaintext" original="messages" date="2020-02-25T18:34:02Z" product-name="estadistica_unal_new">
 		<header/>
 		<body>
 			<trans-unit id="tx_estadisticaunalnew_domain_model_categoria">
@@ -48,20 +48,14 @@
 			<trans-unit id="tx_estadisticaunalnew_domain_model_tipoatributo.nombre_display">
 				<source>Nombre Display</source>
 			</trans-unit>
-			<trans-unit id="tx_estadistica_unal_new_estadisticaspreview.name">
-				<source>Cifras Preview</source>
-			</trans-unit>
-			<trans-unit id="tx_estadistica_unal_new_estadisticaspreview.description">
-				<source>Plugin para mostrar los indicadores estadisticos de la universidad</source>
-			</trans-unit>
 			<trans-unit id="tx_estadistica_unal_new_listcategorias.name">
-				<source>Categorías</source>
+				<source>Categorías 2.0</source>
 			</trans-unit>
 			<trans-unit id="tx_estadistica_unal_new_listcategorias.description">
 				<source>Plugin para mostrar las categorias de cifras estadisticas de la universidad.</source>
 			</trans-unit>
 			<trans-unit id="tx_estadistica_unal_new_showprotocolo.name">
-				<source>Protocolo</source>
+				<source>Protocolo 2.0</source>
 			</trans-unit>
 			<trans-unit id="tx_estadistica_unal_new_showprotocolo.description">
 				<source>Plugin para mostrar el protocolo estadistico de cada una de las categorias.</source>

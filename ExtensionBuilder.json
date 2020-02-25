@@ -187,7 +187,7 @@
                             "relationName": "tipo",
                             "relationType": "zeroToOne",
                             "relationWire": "[wired]",
-                            "renderType": "selectSingleBox",
+                            "renderType": "selectSingle",
                             "uid": "846292068123"
                         }
                     ]
@@ -275,8 +275,8 @@
         },
         "extensionKey": "estadistica_unal_new",
         "name": "Estadistica Unal 2.0",
-        "originalExtensionKey": "",
-        "originalVendorName": "",
+        "originalExtensionKey": "estadistica_unal_new",
+        "originalVendorName": "UNAL",
         "persons": [
             {
                 "company": "Unal",
@@ -298,19 +298,9 @@
                     "noncacheableActions": "",
                     "switchableActions": ""
                 },
-                "description": "Plugin para mostrar los indicadores estadisticos de la universidad",
-                "key": "estadisticaspreview",
-                "name": "Cifras Preview"
-            },
-            {
-                "actions": {
-                    "controllerActionCombinations": "",
-                    "noncacheableActions": "",
-                    "switchableActions": ""
-                },
                 "description": "Plugin para mostrar las categorias de cifras estadisticas de la universidad.",
                 "key": "listcategorias",
-                "name": "Categor\u00edas"
+                "name": "Categor\u00edas 2.0"
             },
             {
                 "actions": {
@@ -320,7 +310,7 @@
                 },
                 "description": "Plugin para mostrar el protocolo estadistico de cada una de las categorias.",
                 "key": "showprotocolo",
-                "name": "Protocolo"
+                "name": "Protocolo 2.0"
             }
         ],
         "vendorName": "UNAL"
@@ -352,8 +342,8 @@
         }
     ],
     "log": {
-        "last_modified": "2020-02-20 08:45",
+        "last_modified": "2020-02-25 06:34",
         "extension_builder_version": "8.10.4",
-        "be_user": " (4)"
+        "be_user": " (1)"
     }
 }

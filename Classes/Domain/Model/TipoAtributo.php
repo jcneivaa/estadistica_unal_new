@@ -20,7 +20,7 @@ class TipoAtributo extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 {
     /**
      * nombre
-     * 
+     *
      * @var string
      * @validate NotEmpty
      */
@@ -28,7 +28,7 @@ class TipoAtributo extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * nombreDisplay
-     * 
+     *
      * @var string
      * @validate NotEmpty
      */
@@ -36,7 +36,7 @@ class TipoAtributo extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the nombre
-     * 
+     *
      * @return string $nombre
      */
     public function getNombre()
@@ -46,7 +46,7 @@ class TipoAtributo extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the nombre
-     * 
+     *
      * @param string $nombre
      * @return void
      */
@@ -57,7 +57,7 @@ class TipoAtributo extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the nombreDisplay
-     * 
+     *
      * @return string $nombreDisplay
      */
     public function getNombreDisplay()
@@ -67,7 +67,7 @@ class TipoAtributo extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the nombreDisplay
-     * 
+     *
      * @param string $nombreDisplay
      * @return void
      */

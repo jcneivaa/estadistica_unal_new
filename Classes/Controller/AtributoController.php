@@ -20,7 +20,7 @@ class AtributoController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
 {
     /**
      * action list
-     * 
+     *
      * @return void
      */
     public function listAction()

@@ -20,7 +20,7 @@ class CategoriaController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContro
 {
     /**
      * categoriaRepository
-     * 
+     *
      * @var \UNAL\EstadisticaUnalNew\Domain\Repository\CategoriaRepository
      * @inject
      */
@@ -28,7 +28,7 @@ class CategoriaController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContro
 
     /**
      * action list
-     * 
+     *
      * @return void
      */
     public function listAction()
