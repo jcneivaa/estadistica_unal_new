@@ -43,5 +43,43 @@
 		</div>
 	</div>
 
+	<!-- Modal -->
+	<div id="dashboard" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-lg">
+
+			<!-- Modal content-->
+			<div class="modal-content unModal-content">
+
+
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></button>
+					<img src="/typo3conf/ext/estadistica_unal/Resources/Public/Images/Escudo_unal_2016.png" style="width: 25px;margin-top: -5px;margin-right: 10px;"   	align="left">
+					<h3 class="modal-title">
+
+						<a id="linkDashboardTitle">						
+							<span  id="modalTitle"></span>
+						</a>
+
+						<small>
+							<span class="glyphicon glyphicon-question-sign" 
+								data-placement="bottom" 
+								data-toggle="tooltip" 
+								title="
+									<f:translate key="LLL:EXT:estadistica_unal/Resources/Private/Language/locallang.xlf:tx_estadisticaunal_domain_model_estadistica.tooltip_dashboard" />
+								">							  
+							</span>
+						</small>
+					</h3>
+				</div>
+
+
+				<div class="modal-body" id="modalBody">
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
 </f:section>
 </html>
