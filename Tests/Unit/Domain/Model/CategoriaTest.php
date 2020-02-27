@@ -155,6 +155,31 @@ class CategoriaTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
     /**
      * @test
      */
+    public function getIframeReturnsInitialValueForString()
+    {
+        self::assertSame(
+            '',
+            $this->subject->getIframe()
+        );
+    }
+
+    /**
+     * @test
+     */
+    public function setIframeForStringSetsIframe()
+    {
+        $this->subject->setIframe('Conceived at T3CON10');
+
+        self::assertAttributeEquals(
+            'Conceived at T3CON10',
+            'iframe',
+            $this->subject
+        );
+    }
+
+    /**
+     * @test
+     */
     public function getLinkReturnsInitialValueForString()
     {
         self::assertSame(

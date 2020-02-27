@@ -46,6 +46,8 @@ page{
     includeCSS {
 
         list-categorias-new = EXT:estadistica_unal_new/Resources/Public/Css/list-categorias-new.scss
+        modal-categoria = EXT:estadistica_unal_new/Resources/Public/Css/modal-categoria.scss
+
 
     }
 

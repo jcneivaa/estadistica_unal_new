@@ -75,6 +75,13 @@ class Categoria extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     protected $atributos = null;
 
     /**
+     * iframe
+     *
+     * @var string
+     */
+    protected $iframe = '';
+
+    /**
      * __construct
      */
     public function __construct()
@@ -263,5 +270,26 @@ class Categoria extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     public function setAtributos(\TYPO3\CMS\Extbase\Persistence\ObjectStorage $atributos)
     {
         $this->atributos = $atributos;
+    }
+
+    /**
+     * Returns the iframe
+     *
+     * @return string $iframe
+     */
+    public function getIframe()
+    {
+        return $this->iframe;
+    }
+
+    /**
+     * Sets the iframe
+     *
+     * @param string $iframe
+     * @return void
+     */
+    public function setIframe($iframe)
+    {
+        $this->iframe = $iframe;
     }
 }

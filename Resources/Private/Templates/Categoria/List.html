@@ -23,15 +23,15 @@
 							</f:link.typolink>
 						</f:then>
 						<f:else>
-							<f:link.action class="colour-shifter" action="show" arguments="{categoria : categoria}" >
+							<a class="colour-shifter categoriaLink" data-nombre="{categoria.nombreDisplay}"  data-iframe="{categoria.iframe}">
 								<img src="{categoria.badge.originalResource.publicUrl}"
 									 data-altbadge="{categoria.altBadge.originalResource.publicUrl}"
 									 data-badge="{categoria.badge.originalResource.publicUrl}"
 									 class="unBadge img-responsive" width=100%>
 								<div class="row">
 									<h4>{categoria.nombreDisplay}</h4>
-								</div>
-							</f:link.action>									
+								</div>								
+							</a>								
 						</f:else>
 					</f:if>
 				</div>	
@@ -65,7 +65,7 @@
 								data-placement="bottom" 
 								data-toggle="tooltip" 
 								title="
-									<f:translate key="LLL:EXT:estadistica_unal/Resources/Private/Language/locallang.xlf:tx_estadisticaunal_domain_model_estadistica.tooltip_dashboard" />
+									<f:translate key="LLL:EXT:estadistica_unal_new/Resources/Private/Language/locallang_csh_tx_estadisticaunalnew_domain_model_categoria.xlf:categorias.tooltip_dashboard" />
 								">							  
 							</span>
 						</small>
@@ -73,13 +73,20 @@
 				</div>
 
 
-				<div class="modal-body" id="modalBody">
+				<div class="modal-body">
+
+					<iframe id="iframeDashboard">
+
+					</iframe> 
+				
 				</div>
 
 			</div>
 
 		</div>
 	</div>
+
+
 
 </f:section>
 </html>

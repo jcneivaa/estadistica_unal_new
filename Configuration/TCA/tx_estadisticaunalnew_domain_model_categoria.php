@@ -15,14 +15,14 @@ return [
             'starttime' => 'starttime',
             'endtime' => 'endtime',
         ],
-        'searchFields' => 'nombre,nombre_display,badge,alt_badge,descripcion,link,atributos',
+        'searchFields' => 'nombre,nombre_display,badge,alt_badge,descripcion,iframe,link,atributos',
         'iconfile' => 'EXT:estadistica_unal_new/Resources/Public/Icons/tx_estadisticaunalnew_domain_model_categoria.gif'
     ],
     'interface' => [
-        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, nombre, nombre_display, badge, alt_badge, descripcion, link, atributos',
+        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, nombre, nombre_display, badge, alt_badge, descripcion, iframe, link, atributos',
     ],
     'types' => [
-        '1' => ['showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, nombre, nombre_display, badge, alt_badge, descripcion, link, atributos, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, starttime, endtime'],
+        '1' => ['showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, nombre, nombre_display, badge, alt_badge, descripcion, iframe, link, atributos, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, starttime, endtime'],
     ],
     'columns' => [
         'sys_language_uid' => [
@@ -244,11 +244,22 @@ return [
             ],
             
         ],
+        'iframe' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:estadistica_unal_new/Resources/Private/Language/locallang_db.xlf:tx_estadisticaunalnew_domain_model_categoria.iframe',
+            'config' => [
+                'type' => 'input',
+                'renderType' => 'inputLink',
+                'size' => 30,
+                'eval' => 'trim'
+            ],
+        ],
         'link' => [
             'exclude' => true,
             'label' => 'LLL:EXT:estadistica_unal_new/Resources/Private/Language/locallang_db.xlf:tx_estadisticaunalnew_domain_model_categoria.link',
             'config' => [
                 'type' => 'input',
+                'renderType' => 'inputLink',
                 'size' => 30,
                 'eval' => 'trim'
             ],

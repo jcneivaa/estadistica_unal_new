@@ -96,6 +96,17 @@
                             "propertyIsExcludeField": true,
                             "propertyIsL10nModeExclude": false,
                             "propertyIsRequired": false,
+                            "propertyName": "iframe",
+                            "propertyType": "String",
+                            "uid": "91024849688"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsRequired": false,
                             "propertyName": "link",
                             "propertyType": "String",
                             "uid": "525312778143"
@@ -342,7 +353,7 @@
         }
     ],
     "log": {
-        "last_modified": "2020-02-25 06:34",
+        "last_modified": "2020-02-27 07:51",
         "extension_builder_version": "8.10.4",
         "be_user": " (1)"
     }

@@ -11,6 +11,7 @@ CREATE TABLE tx_estadisticaunalnew_domain_model_categoria (
 	badge int(11) unsigned NOT NULL default '0',
 	alt_badge int(11) unsigned NOT NULL default '0',
 	descripcion text,
+	iframe varchar(255) DEFAULT '' NOT NULL,
 	link varchar(255) DEFAULT '' NOT NULL,
 	atributos int(11) unsigned DEFAULT '0' NOT NULL,
 
