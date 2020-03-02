@@ -33,8 +33,18 @@ class CategoriaController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContro
      */
     public function listAction()
     {
+
+        $uri_pagina_protocolo = $this->settings['link_pagina_protocolo'];
+        $exploded_uri_pagina_protocolo = explode('=', $uri_pagina_protocolo);
+        $pagina_protocolo_pageuid = $exploded_uri_pagina_protocolo[1];
+
+
         $categorias = $this->categoriaRepository->findAll();
-        $this->view->assign('categorias', $categorias);
+
+        $this->view->assignMultiple([
+            'pagina_protocolo_pageuid' => $pagina_protocolo_pageuid,
+            'categorias' => $categorias
+        ]);
     }
 
     /**
@@ -54,4 +64,17 @@ class CategoriaController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContro
         ]);
     }
     
+    /**
+     * action showProtocolo
+     *
+     * @return void
+     */
+    public function showProtocoloAction()
+    {
+       
+        $uid = $this->request->getArgument('categoria');
+        $categoria = $this->categoriaRepository->findByUid($uid);
+        $this->view->assign('categoria', $categoria);
+    }
+
 }

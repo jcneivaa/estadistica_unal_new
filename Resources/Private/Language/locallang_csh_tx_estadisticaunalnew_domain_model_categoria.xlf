@@ -30,6 +30,9 @@
 			<trans-unit id="categorias.tooltip_dashboard">
 				<source>Haga clic en el título para ver en detalle</source>
 			</trans-unit>
+			<trans-unit id="protocolo.atributos_generales">
+				<source>Atributos generales de la estadística</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

@@ -142,20 +142,14 @@ return [
             
         ],
         'tipo' => [
-            'exclude' => false,
+            'exclude' => true,
             'label' => 'LLL:EXT:estadistica_unal_new/Resources/Private/Language/locallang_db.xlf:tx_estadisticaunalnew_domain_model_atributo.tipo',
             'config' => [
-                'type' => 'inline',
+                'type' => 'select',
+                'renderType' => 'selectSingle',
                 'foreign_table' => 'tx_estadisticaunalnew_domain_model_tipoatributo',
-                'minitems' => 0,
-                'maxitems' => 1,
-                'appearance' => [
-                    'collapseAll' => 0,
-                    'levelLinksPosition' => 'top',
-                    'showSynchronizationLink' => 1,
-                    'showPossibleLocalizationRecords' => 1,
-                    'showAllLocalizationLink' => 1
-                ],
+                'MM' => 'tx_estadisticaunal_atributoestadistica_tipoatrestadistica_mm',
+                'size' => 1,
             ],
         ],
     

@@ -23,7 +23,7 @@ call_user_func(
             'UNAL.EstadisticaUnalNew',
             'Showprotocolo',
             [
-                'Categoria' => 'listProtocolo,list',
+                'Categoria' => 'listProtocolo,list,showProtocolo',
                 'Atributo' => 'list'
             ],
             // non-cacheable actions

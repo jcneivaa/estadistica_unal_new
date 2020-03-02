@@ -22,9 +22,12 @@ $(document).ready(function(){
 	$(".categoriaLink").click(
 		function(){
 
-			var linkIframe = $(this).data("iframe");
+			var uriIframe = $(this).data("iframe");
 			var nombreCategoria = $(this).data("nombre");
-			$('#iframeDashboard').attr("src",linkIframe);
+			var uriProtocolo = $(this).data("uriprotocolo");
+
+			$('#linkDashboardTitle').attr("href",uriProtocolo);						
+			$('#iframeDashboard').attr("src",uriIframe);
 			$('#modalTitle').text(nombreCategoria);
 
 			$("#dashboard").modal();

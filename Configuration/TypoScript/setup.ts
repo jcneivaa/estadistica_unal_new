@@ -47,12 +47,25 @@ page{
 
         list-categorias-new = EXT:estadistica_unal_new/Resources/Public/Css/list-categorias-new.scss
         modal-categoria = EXT:estadistica_unal_new/Resources/Public/Css/modal-categoria.scss
+        estadisticas-protocolo-new = EXT:estadistica_unal_new/Resources/Public/Css/estadisticas-protocolo-new.scss
 
 
     }
 
     includeJS{
+        jsprintf-new = EXT:estadistica_unal_new/Resources/Public/Js/jspdf/libs/sprintf.js
+        jspdf-new = EXT:estadistica_unal_new/Resources/Public/Js/jspdf/jspdf.js
+        jspdf_debug-new = EXT:estadistica_unal_new/Resources/Public/Js/jspdf/jspdf.debug.js
+        jspdf_addimage-new = EXT:estadistica_unal_new/Resources/Public/Js/jspdf/jspdf.plugin.addimage.js
+        base64-new = EXT:estadistica_unal_new/Resources/Public/Js/jspdf/libs/base64.js
+        jspdf_autotable-new = EXT:estadistica_unal_new/Resources/Public/Js/jspdf/jspdf.plugin.autotable.js
+    }
+
+    includeJSFooter{
+
         list-categorias-new = EXT:estadistica_unal_new/Resources/Public/Js/list-categorias-new.js 
+        protocolo-new = EXT:estadistica_unal_new/Resources/Public/Js/protocolo-new.js 
+
     }
 
 }

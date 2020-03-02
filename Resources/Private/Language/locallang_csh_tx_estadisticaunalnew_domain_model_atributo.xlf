@@ -12,6 +12,12 @@
 			<trans-unit id="tipo.description">
 				<source>tipo</source>
 			</trans-unit>
+			<trans-unit id="atributo.description">
+				<source>Atributo</source>
+			</trans-unit>
+			<trans-unit id="definicion.description">
+				<source>Definición</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

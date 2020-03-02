@@ -271,6 +271,7 @@ return [
                 'type' => 'select',
                 'renderType' => 'selectMultipleSideBySide',
                 'foreign_table' => 'tx_estadisticaunalnew_domain_model_atributo',
+                'foreign_table_where' => 'AND tx_estadisticaunalnew_domain_model_atributo.pid=###CURRENT_PID###',
                 'MM' => 'tx_estadisticaunalnew_categoria_atributo_mm',
                 'size' => 10,
                 'autoSizeMax' => 30,

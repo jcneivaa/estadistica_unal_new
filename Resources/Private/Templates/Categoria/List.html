@@ -23,7 +23,11 @@
 							</f:link.typolink>
 						</f:then>
 						<f:else>
-							<a class="colour-shifter categoriaLink" data-nombre="{categoria.nombreDisplay}"  data-iframe="{categoria.iframe}">
+							<a 
+							class="colour-shifter categoriaLink" 
+							data-nombre="{categoria.nombreDisplay}"  
+							data-iframe="{categoria.iframe}" 
+							data-uriprotocolo="{f:uri.action(action: 'showProtocolo', arguments: {categoria:categoria}, pageUid: pagina_protocolo_pageuid)}">
 								<img src="{categoria.badge.originalResource.publicUrl}"
 									 data-altbadge="{categoria.altBadge.originalResource.publicUrl}"
 									 data-badge="{categoria.badge.originalResource.publicUrl}"
