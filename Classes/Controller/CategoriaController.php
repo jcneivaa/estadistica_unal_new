@@ -36,4 +36,22 @@ class CategoriaController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContro
         $categorias = $this->categoriaRepository->findAll();
         $this->view->assign('categorias', $categorias);
     }
+
+    /**
+     * action listProtocolo
+     *
+     * @return void
+     */
+    public function listProtocoloAction()
+    {
+       
+
+        $texto = $this->settings['texto_protocolos'];
+        $categorias = $this->categoriaRepository->findAll();
+        $this->view->assignMultiple([
+            'texto' => $texto,
+            'categorias' => $categorias
+        ]);
+    }
+    
 }
