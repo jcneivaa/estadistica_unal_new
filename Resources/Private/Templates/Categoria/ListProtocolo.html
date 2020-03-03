@@ -1,0 +1,43 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+<f:section name="main">
+
+<f:flashMessages />
+
+	<div class="row lista-protocolo">
+		<div class="col-md-12">	
+			<div class="panel panel-default">
+				<div class="panel-body">
+
+					<div class="row">
+						<div class="col-md-12" style="margin-bottom: 10px">
+					
+								<div class="panel-body">
+									<f:format.html>{texto}</f:format.html>
+								</div>
+
+						</div>
+						<div class="col-md-12">
+							<div class="list-group">
+
+								<f:for each="{categorias}" as="categoria">
+
+													
+									<a href="{f:uri.action(action: 'showProtocolo', arguments: {categoria:categoria})}" class="list-group-item list-group-item-info">{categoria.nombreDisplay}</a>
+									
+									   
+								</f:for>
+							</div>
+							
+						</div>
+					</div>
+					
+				</div>
+			</div>	
+		</div>
+	</div>
+
+</f:section>
+</html>
+

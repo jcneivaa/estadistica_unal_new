@@ -41,8 +41,50 @@
             }		
         }
 
+        .caja-blanca {
+            padding: 10px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 1px #ffe0e0;
 
 
+        }
+        
+        .jssocials-share {
+            display: initial;
+            margin: -0.2em;
+            padding: 5px;
+            overflow: hidden;
+            a{
+                border-radius:5px;
+                margin: 0.1em 0;
+            }
+        }
+
+        .share-panel{
+            background: gainsboro;
+            margin: 0%;
+            margin-top: 0.4em;
+            border-radius: 5px;
+            padding:1%;
+            label{
+                margin:1% 0%;
+            }
+
+            .form-control{
+                border-radius: 5px;
+            }
+
+        }	
+
+        .share-button {
+            background-color: lightslategray;
+            border-color: gray;
+        }
+        .share-button:hover{
+            background-color: slategray;
+            border-color: darkgray;
+        }
 
         iframe{
             width: 100%;
@@ -50,106 +92,13 @@
             background: url(../Images/loader.gif) center center no-repeat;
         }	
 
-        .panelArchivos{
-
-            @each $heading in $headings{
-            #{$heading} {
-                margin-bottom: 15px;
-            }
-            }
-
-            font-size: 16px;
-            padding: 5px 5px 15px 5px;
-            font-size: 16px;
-            background-color: white;
-            border-radius: 20px;
-            box-shadow: 0px 0px 10px 1px #ffe0e0;
-            margin-bottom: 10px; 
-            margin-top: 10px;     	
-            padding: 0.5em;
-
-            .nav-pills{	
-
-                background: transparent;
-                box-shadow: unset;
-                padding: 0% 0.5%;
-
-            }	
-
-            @media(min-width:766px){		
-                li + li {
-                    padding-left: 0.2em;
-                }
-            }
-
-            .jssocials-share {
-                display: initial;
-                margin: -0.2em;
-                padding: 5px;
-                overflow: hidden;
-                a{
-                    border-radius:5px;
-                    margin: 0.1em 0;
-                }
-            }
-
-            .share-panel{
-                background: gainsboro;
-                margin: 0%;
-                margin-top: 0.4em;
-                border-radius: 5px;
-                padding:1%;
-                label{
-                    margin:1% 0%;
-                }
-
-                .form-control{
-                    border-radius: 5px;
-                }
-
-            }	
-
-            .share-button {
-                background-color: lightslategray;
-                border-color: gray;
-            }
-            .share-button:hover{
-                background-color: slategray;
-                border-color: darkgray;
-            }
-            
-            
-        }
-
-        .halfTabPane{
-            @media screen and (min-width: 992px) {
-                width :49.1%;			
-            }
-
-            @media screen and (max-width: 992px) {
-                width :100%;
-            }
-        }
-
-
-        .regularActual{
-            float: right !important;
-        }
-
-        .nav li.active > a.historico {
-            background-color: #88ad84!important;
-        }
-
-        .nav li.active > a.actual{
-            background-color: #debfbf	!important;
-        }
-
         .tooltip{
             font-size: 0.85em;
         }
 
         .glyphicon{
             margin-left: 5px;
+            margin-top: 3px;
         }
 
         a{
@@ -198,7 +147,7 @@
         .btn-group {
             overflow: hidden;
             border-radius: 5px;     	
-            margin: 0.5em 0em;
+            margin: 20px 0px 0px 0px;
             
             a.btn {
                 color:white;

@@ -32,4 +32,10 @@ $(document).ready(function(){
 
 			$("#dashboard").modal();
 	  });
+
+	  $(".fullscreen-button").click(
+		function(){
+			var idFullscreenElement= $(this).data('iframeid');
+			FullScreenHelper.toggle(document.getElementById(idFullscreenElement));
+	  });
 });

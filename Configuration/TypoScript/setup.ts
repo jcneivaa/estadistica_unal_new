@@ -53,12 +53,13 @@ page{
     }
 
     includeJS{
-        jsprintf-new = EXT:estadistica_unal_new/Resources/Public/Js/jspdf/libs/sprintf.js
-        jspdf-new = EXT:estadistica_unal_new/Resources/Public/Js/jspdf/jspdf.js
-        jspdf_debug-new = EXT:estadistica_unal_new/Resources/Public/Js/jspdf/jspdf.debug.js
-        jspdf_addimage-new = EXT:estadistica_unal_new/Resources/Public/Js/jspdf/jspdf.plugin.addimage.js
-        base64-new = EXT:estadistica_unal_new/Resources/Public/Js/jspdf/libs/base64.js
-        jspdf_autotable-new = EXT:estadistica_unal_new/Resources/Public/Js/jspdf/jspdf.plugin.autotable.js
+        jsprintf-new = EXT:estadistica_unal_new/Resources/Public/Js/libs/jspdf/libs/sprintf.js
+        jspdf-new = EXT:estadistica_unal_new/Resources/Public/Js/libs/jspdf/jspdf.js
+        jspdf_debug-new = EXT:estadistica_unal_new/Resources/Public/Js/libs/jspdf/jspdf.debug.js
+        jspdf_addimage-new = EXT:estadistica_unal_new/Resources/Public/Js/libs/jspdf/jspdf.plugin.addimage.js
+        base64-new = EXT:estadistica_unal_new/Resources/Public/Js/libs/jspdf/libs/base64.js
+        jspdf_autotable-new = EXT:estadistica_unal_new/Resources/Public/Js/libs/jspdf/jspdf.plugin.autotable.js
+        fullscreen-helper = EXT:estadistica_unal_new/Resources/Public/Js/libs/full-screen-helper.js
     }
 
     includeJSFooter{
