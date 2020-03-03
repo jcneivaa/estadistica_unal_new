@@ -48,18 +48,24 @@ page{
         list-categorias-new = EXT:estadistica_unal_new/Resources/Public/Css/list-categorias-new.scss
         modal-categoria = EXT:estadistica_unal_new/Resources/Public/Css/modal-categoria.scss
         estadisticas-protocolo-new = EXT:estadistica_unal_new/Resources/Public/Css/estadisticas-protocolo-new.scss
+        jssocials-theme-flat = EXT:estadistica_unal_new/Resources/Public/Css/jssocials-theme-flat.css
+        jssocials = EXT:estadistica_unal_new/Resources/Public/Css/jssocials.css
+        font-awesome = EXT:estadistica_unal_new/Resources/Public/Css/font-awesome.css
 
 
+        
     }
 
     includeJS{
-        jsprintf-new = EXT:estadistica_unal_new/Resources/Public/Js/libs/jspdf/libs/sprintf.js
-        jspdf-new = EXT:estadistica_unal_new/Resources/Public/Js/libs/jspdf/jspdf.js
-        jspdf_debug-new = EXT:estadistica_unal_new/Resources/Public/Js/libs/jspdf/jspdf.debug.js
-        jspdf_addimage-new = EXT:estadistica_unal_new/Resources/Public/Js/libs/jspdf/jspdf.plugin.addimage.js
-        base64-new = EXT:estadistica_unal_new/Resources/Public/Js/libs/jspdf/libs/base64.js
-        jspdf_autotable-new = EXT:estadistica_unal_new/Resources/Public/Js/libs/jspdf/jspdf.plugin.autotable.js
+        jsprintf = EXT:estadistica_unal_new/Resources/Public/Js/libs/jspdf/libs/sprintf.js
+        jspdf = EXT:estadistica_unal_new/Resources/Public/Js/libs/jspdf/jspdf.js
+        jspdf_debug = EXT:estadistica_unal_new/Resources/Public/Js/libs/jspdf/jspdf.debug.js
+        jspdf_addimage = EXT:estadistica_unal_new/Resources/Public/Js/libs/jspdf/jspdf.plugin.addimage.js
+        base64 = EXT:estadistica_unal_new/Resources/Public/Js/libs/jspdf/libs/base64.js
+        jspdf_autotable = EXT:estadistica_unal_new/Resources/Public/Js/libs/jspdf/jspdf.plugin.autotable.js
         fullscreen-helper = EXT:estadistica_unal_new/Resources/Public/Js/libs/full-screen-helper.js
+        jssocials = EXT:estadistica_unal_new/Resources/Public/Js/libs/jssocials.min.js
+
     }
 
     includeJSFooter{

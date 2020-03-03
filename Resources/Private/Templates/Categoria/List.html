@@ -83,25 +83,26 @@
 						<iframe id="iframeDashboard"></iframe> 					
 					</div>
 					<div class="btn-group btn-group-justified">
-						<a class="btn btn-info fullscreen-button" data-iframeid="iframeDashboard"> 
+						<a class="btn btn-info fullscreen-button-new" data-iframeid="iframeDashboard"> 
 							<f:translate key="LLL:EXT:estadistica_unal_new/Resources/Private/Language/locallang.xlf:tx_estadisticaunal.fullscreen" />
 							<span class="glyphicon glyphicon-fullscreen"></span>
 						</a>
-						<a class="btn share-button"> 
+						<a class="btn share-button-new"> 
 							<f:translate key="LLL:EXT:estadistica_unal_new/Resources/Private/Language/locallang.xlf:tx_estadisticaunal.share" />
 							<span class="glyphicon glyphicon-share-alt"></span>
 						</a>					
 					</div>
-					<div class="row share-panel" style="display: none">
+					<div class="row share-panel-new" style="display: none" id="sharePanel">
 						<label><f:translate key="LLL:EXT:estadistica_unal_new/Resources/Private/Language/locallang.xlf:tx_estadisticaunal.share_social" /></label>
-						<div class="share-socials">						
+						<div class="share-socials-new" id="share-socials-new">						
 						</div>	
 	
 						<label><f:translate key="LLL:EXT:estadistica_unal_new/Resources/Private/Language/locallang.xlf:tx_estadisticaunal.share_link" /></label>
-						<input class="form-control share-url" readonly>			
+						
+						<input class="form-control" id="share-url-new" readonly>			
 	
 						<label><f:translate key="LLL:EXT:estadistica_unal_new/Resources/Private/Language/locallang.xlf:tx_estadisticaunal.share_embed" /></label>
-						<input  class="form-control embed-url"  value='<iframe width="100%" height="500px" frameborder="0" mozallowfullscreen="true" webkitallowfullscreen="true" allowfullscreen="true" src="LINK-TOKEN"></iframe>' readonly>					
+						<input  class="form-control" id="embed-url-new"  value='<iframe width="100%" height="500px" frameborder="0" mozallowfullscreen="true" webkitallowfullscreen="true" allowfullscreen="true" src="LINK-TOKEN"></iframe>' readonly>					
 						</div>				
 					</div>
 						
